@@ -1,0 +1,70 @@
+body,
+html {
+  background-color: #171718;
+}
+* {
+  padding: 0;
+  margin: 0;
+}
+
+a,
+button {
+  cursor: pointer;
+  text-decoration: none;
+  background-color: transparent;
+}
+
+Link {
+  cursor: pointer;
+  text-decoration: none;
+  background-color: transparent;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 60px;
+  padding: 18px 16px;
+  border: 1px solid #26292d;
+  background-color: #171718;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+}
+
+.navbarlinks {
+  display: none;
+
+  @media (min-width: 992px) {
+    display: flex;
+  }
+}
+
+.navbarlinks {
+  width: 275px;
+  height: 32px;
+  gap: 23px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 16px;
+  color: white;
+}
+
+.linkText {
+  color: #fff;
+}
+
+.linktext.hovered {
+  content: "";
+  color: red;
+}
+
+.burgerButton {
+  width: 24px;
+  height: 24px;
+  @media (min-width: 992px) {
+    display: none;
+  }
+}
