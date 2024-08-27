@@ -5,7 +5,6 @@ import "../footer/Footer.css";
 function Footer() {
   return (
     <Fragment>
-      <Outlet />
       <div className="footer">
         <div className="footerContent">
           <svg

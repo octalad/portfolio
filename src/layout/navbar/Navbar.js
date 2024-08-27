@@ -70,7 +70,6 @@ function Navbar() {
           </Link>
         </div>
       </div>
-      <Outlet />
     </Fragment>
   );
 }
