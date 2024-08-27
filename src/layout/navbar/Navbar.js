@@ -5,7 +5,9 @@ import "../navbar/Navbar.css";
 import { useState } from "react";
 
 function Navbar() {
-  const [isHovered, setIsHovered] = useState(false);
+  const [isHoveredInicio, setIsHoveredInicio] = useState(false);
+  const [isHoveredAbout, setIsHoveredAbout] = useState(false);
+  const [isHoveredContact, setIsHoveredContact] = useState(false);
 
   return (
     <Fragment>
@@ -43,25 +45,25 @@ function Navbar() {
 
         <div className="navbarlinks">
           <Link
-            className={`linktext${isHovered ? " hovered1" : ""}`}
-            onMouseEnter={() => setIsHovered(true)}
-            onMouseLeave={() => setIsHovered(false)}
+            className={`linkText${isHoveredInicio ? " hovered" : ""}`}
+            onMouseEnter={() => setIsHoveredInicio(true)}
+            onMouseLeave={() => setIsHoveredInicio(false)}
             to="/"
           >
             Inicio
           </Link>
           <Link
-            className={`linktext${isHovered ? " hovered2" : ""}`}
-            onMouseEnter={() => setIsHovered(true)}
-            onMouseLeave={() => setIsHovered(false)}
+            className={`linkText${isHoveredAbout ? " hovered" : ""}`}
+            onMouseEnter={() => setIsHoveredAbout(true)}
+            onMouseLeave={() => setIsHoveredAbout(false)}
             to="/AboutMe"
           >
             Sobre Mim
           </Link>
           <Link
-            className={`linktext${isHovered ? " hovered3" : ""}`}
-            onMouseEnter={() => setIsHovered(true)}
-            onMouseLeave={() => setIsHovered(false)}
+            className={`linkText${isHoveredContact ? " hovered" : ""}`}
+            onMouseEnter={() => setIsHoveredContact(true)}
+            onMouseLeave={() => setIsHoveredContact(false)}
             to="/Contact"
           >
             Contato
