@@ -1,5 +1,5 @@
 import React, { Fragment } from "react";
-import { Link, Outlet } from "react-router-dom";
+import { Link } from "react-router-dom";
 import "../footer/Footer.css";
 
 function Footer() {
@@ -28,9 +28,9 @@ function Footer() {
             </Link>
           </div>
           <div className="footerColumn">
-            <Link className="link1 cont" to="/Contact">
+            <a href="mailto:ladeiraoctavio@gmail.com" className="link1 cont">
               Contato
-            </Link>
+            </a>
             <a href="mailto:ladeiraoctavio@gmail.com" className="link2">
               Email
             </a>

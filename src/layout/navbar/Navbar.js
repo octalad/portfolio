@@ -60,14 +60,14 @@ function Navbar() {
           >
             Sobre Mim
           </Link>
-          <Link
+          <a
+            href="mailto:ladeiraoctavio@gmail.com"
             className={`linkText${isHoveredContact ? " hovered" : ""}`}
             onMouseEnter={() => setIsHoveredContact(true)}
             onMouseLeave={() => setIsHoveredContact(false)}
-            to="/Contact"
           >
             Contato
-          </Link>
+          </a>
         </div>
       </div>
     </Fragment>
