@@ -1,0 +1,34 @@
+body,
+html {
+  background-color: #171718;
+}
+* {
+  padding: 0;
+  margin: 0;
+}
+
+a,
+button {
+  cursor: pointer;
+  text-decoration: none;
+  background-color: transparent;
+}
+
+Link {
+  cursor: pointer;
+  text-decoration: none;
+  background-color: transparent;
+}
+
+.menuContainer {
+  display: flex;
+  flex-direction: column;
+  padding-top: 120px;
+  padding-bottom: 280px;
+  gap: 24px;
+  padding-left: 36px;
+}
+
+.menuLink {
+  color: #fff;
+}

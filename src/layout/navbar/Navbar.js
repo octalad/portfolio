@@ -25,7 +25,7 @@ function Navbar() {
           />
         </svg>
 
-        <Link className="burgerButton" to="/menu">
+        <Link className="burgerButton" to="/Menu">
           <svg
             width="24"
             height="24"
